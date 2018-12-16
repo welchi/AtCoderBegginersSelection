@@ -3,13 +3,13 @@
 @test "a1.txt" {
     run python3 a.py < a1.txt
     echo $output
-    [ "$output" = ""  ]
+    [ "$output" = "2"  ]
 }
 
 @test "a2.txt" {
     run python3 a.py < a2.txt
     echo $output
-    [ "$output" = "" ]
+    [ "$output" = "0" ]
 }
 
 @test "a3.txt" {
